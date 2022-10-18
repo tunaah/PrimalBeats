@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="PrimalBeats.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <!-- https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25 color pallete used -->
+
+    <title visible="false"></title>
+    <link href="MasterStyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <a href="HomePage.aspx">
+                <img id="logo" src="Images/croc_head_2.0.png" alt="Primal Beats Logo" />
+            </a>
+            <nav id="menu">
+
+            </nav>
+            <nav id="search">
+                <form id="searchBar" runat="server">
+                    <input type="text" name="query" />
+                    <button>Search</button>
+                </form>
+            </nav>
+        </header>
+        <hr />
+        <nav>
+        
+        </nav>
+        <main>
+            <asp:ContentPlaceHolder ID="mainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </main>
+        <footer>
+            <h2>About Us</h2>
+            <hr />
+            <ul>
+                <li></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
