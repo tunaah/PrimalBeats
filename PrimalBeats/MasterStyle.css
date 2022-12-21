@@ -1,32 +1,415 @@
-﻿body {
-    background-color: #DDA15E;
+﻿/* Below is Master page css */
+body {
+    background-color: #fff;
 }
 #wrapper {
-    background-color: #FEFAE0;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
     min-width: 700px;
 }
 header {
-    width: 100%;
+    min-width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-direction: row;
     padding-right: 0px;
-    padding-top: 2px;
+    padding-top: 0px;
+}
+footer {
+    min-width: 100%;
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding-right: 0px;
+    padding-top: 0px;
 }
 hr {
     height: 1px;
     background-color: #606C38;
     border: none;
+    width: 98%;
+    margin: 30px 0px 0px 0px;
+}
+footer section.footerSection {
+    display: inline-flex;
+    align-items: start;
+    flex-direction: column;
+    margin-right: 40px;
+}
+footer h3.footerHead {
+    color: #283618;
+    margin-left: 12px;
+    margin-bottom: -3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer a.footerLink {
+    text-decoration: none;
+    color: #283618;
+    padding: 3px;
+    border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    footer a.footerLink:hover {
+        color: #606C38;
+        background-color: #4ba07432;
+    }
+footer li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+    footer li:hover {
+        
+    }
+footer ul {
+    
 }
 #logo {
-    width: 80%;
-    max-width: 350px;
-    min-width: 225px;
+    width: 90%;
+    max-width: 400px;
+    min-width: 300px;
+    padding: 0px;
 }
+form {
+    display: flex;
+    align-items: center;
+}
+nav#headerNav {
+    display: flex;
+}
+form#search input {
+    background-color: #D4F0E1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    height: 30px;
+    color: #5D5D5D;
+    padding-left: 10px
+}
+    form#search input:focus {
+        outline-color: #8E8E8E;
+    }
+        form#search input::placeholder {
+            color: #fff;
+            opacity: 0.7;
+        }
+form#search button {
+    background-color: #D4F0E1;
+    border-color: #8E8E8E;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #FEFAE0;
+}
+    form#search button:active {
+        background-color: #D4F0E15F;
+    }
 nav#search {
+    
 }
+img#searchIcon {
+    width: 100%;
+    margin-top: 4px;
+}
+img#cartIcon {
+    width: 100%;
+    margin-top: 4px;
+}
+button.navBtn {
+    max-width: 33px;
+    cursor: pointer;
+}
+button#carty {
+    background-color: #D4F0E1;
+    border-color: #8E8E8E;
+    border-radius: 10px;
+    padding: 1px 2px;
+    margin-left: 6px;
+    margin-right: 10px;
+}
+/* Below is Home page CSS*/
+main#home {
+    background-color: #4ba074;
+    display: flex;
+    justify-content: end;
+    /*padding: 10px;*/
+}
+img#headPhones {
+    margin-right: 23%;
+}
+section#homeTxt {
+    
+}
+h2#homeHeadTxt {
+    color: #ffffff63;
+    font-size: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+span#homeBodyTxt {
+    color: #fff;
+    font-size: 30px;
+    font-family: Candara, Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Below is About page CSS*/
+main#about {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*padding: 10px;*/
+}
+    main#about h2 {
+        font-size: 64px;
+        color: #283618;
+        text-align: center;
+        margin-top: 100px;
+    }
+section#aboutCompany {
+    min-width: 100%;
+    background-color: #4ba074;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*padding: 10px;*/
+}
+section#aboutCompany div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+}
+    section#aboutCompany div h1 {
+        color: #fff;
+        font-size: 80px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 25px 105px 0px 0px;
+        
+    }
+    section#aboutCompany div p {
+        color: #fff;
+        font-size: 30px;
+        font-family: Candara, Verdana, Geneva, Tahoma, sans-serif;
+        /*margin: 25px 105px 0px 0px;*/
+    }
+section#aboutPersonal {
+    min-width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+div.Personal {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px 0px 30px;
+}
+    div.Personal h3 {
+        font-size: 24px;
+        color: #283618;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    div.Personal p {
+        color: #283618;
+        text-align: center;
+        font-family: Candara, Verdana, Geneva, Tahoma, sans-serif;
+    }
+/* Below is Contact page CSS*/
+main#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*padding: 10px;*/
+}
+    main#contact h1 {
+        color: #283618;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    main#contact p {
+        color: #283618;
+        text-align: center;
+        margin-bottom: 40px;
+        font-family: Candara, Verdana, Geneva, Tahoma, sans-serif;
+    }
+section#contactInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+section.contactItem {
+    max-width: 18%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    margin: 10px;
+}
+    section.contactItem p {
+        text-align: start;
+        color: #283618;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 23px;
+    }
+    section.contactItem a {
+        text-decoration: none;
+        color: #283618;
+    }
+    section.contactItem img {
+        max-height: 50px;
+        max-width: 50px;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+/* Below is Dropdown Menu CSS*/
+#logoMenu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+nav#drpDwnMenu {
+    margin-left: -25px;
+}
+#drpDwnMenu a {
+    text-decoration: none;
+}
+
+nav#drpDwnMenu {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#drpDwnMenu ul {
+    background: #fff;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+#drpDwnMenu li {
+    color: #283618;
+    background: #fff;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+    #drpDwnMenu li a {
+        color: #283618;
+    }
+
+    #drpDwnMenu li:hover {
+        background: #BAD1C2;
+        cursor: pointer;
+    }
+
+#drpDwnMenu ul li ul {
+    background: orange;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+    #drpDwnMenu ul li:hover > ul,
+    #drpDwnMenu ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    #drpDwnMenu ul li ul li {
+        clear: both;
+        width: 100%;
+    }
+/* Below is Product Page CSS*/
+h1.productHeader {
+    color: #283618;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
+main.brandPage {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*padding: 10px;*/
+}
+    main.brandPage a {
+        text-decoration: none;
+        color: #283618;
+    }
+section.productRow {
+    min-width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+a.Product {
+    display: flex;
+    flex-direction: column;
+    max-width: 15%;
+    padding: 50px;
+    border-bottom-width: 0.1875rem;
+    border-bottom-style: solid;
+    border-bottom-color: #8E8E8E;
+    margin: 10px 10px 10px 10px;
+    transition-duration: 0.5s;
+}
+    a.Product:hover {
+        box-shadow: 5px 0px 40px #0000000D, -5px 0px 40px #0000000D, 0px 5px 40px #0000000D, 0px -5px 40px #0000000D;
+        border-bottom-color: #288B41;
+    }
+a.Product img {
+    max-width: 100%;
+}
+    a.Product article h2 {
+        color: #283618;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    a.Product article p {
+        color: #283618;
+        font-family: Candara, Verdana, Geneva, Tahoma, sans-serif;
+    }
+/* Below is Product Page CSS*/
+main.productPage {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+    main.productPage img {
+        max-width: 50%;
+        display: flex;
+        justify-content: start;
+    }
+    main.productPage section {
+        color: ;
+        max-width: 25%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0px 160px;
+    }
+        main.productPage section p {
+            color: #283618;
+            font-size: 23px;
+            font-family: Candara, Verdana, Geneva, Tahoma, sans-serif;
+        }
+        main.productPage section h1 {
+            color: #283618;
+            font-size: 55px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }

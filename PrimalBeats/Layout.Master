@@ -8,40 +8,68 @@
     <!-- https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25 color pallete used -->
 
     <title visible="false"></title>
-    <link href="MasterStyle.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="MasterStyle.css" rel="stylesheet" type="text/css" runat="server" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <div id="wrapper">
-        <header>
+    <header>
+        <nav id="logoMenu">
             <a href="HomePage.aspx">
-                <img id="logo" src="Images/croc_head_2.0.png" alt="Primal Beats Logo" />
+                <img id="logo" src="Images/PrimalBeatsv2.png" alt="Primal Beats Logo" />
             </a>
-            <nav id="menu">
-
+            <nav role="navigation" id="drpDwnMenu">
+                <ul>
+                    <li><a href="HomePage.aspx">Home</a></li>
+                    <li><a href="AboutPage.aspx">About Us</a></li>
+                    <li>
+                        <a href="#">Categories</a>
+                        <ul class="dropdown">
+                            <li><a href="ATPage.aspx">Audio Technica</a></li>
+                            <li><a href="#">Bose</a></li>
+                            <li><a href="#">Sennheiser</a></li>
+                            <li><a href="#">Sony</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ContactPage.aspx">Contact</a></li>
+                </ul>
             </nav>
-            <nav id="search">
-                <form id="searchBar" runat="server">
-                    <input type="text" name="query" />
-                    <button>Search</button>
-                </form>
-            </nav>
-        </header>
-        <hr />
-        <nav>
-        
         </nav>
-        <main>
-            <asp:ContentPlaceHolder ID="mainContent" runat="server">
-            </asp:ContentPlaceHolder>
-        </main>
+        
+
+        <nav id="headerNav">
+            <form id="search" runat="server">
+                <input type="text" name="query" placeholder="Search..." />
+                <button class="navBtn"><img id="searchIcon" src="Images/Magnifying_Glasspng.png" alt="Search" /></button>
+            </form>
+        </nav>
+    </header>
+    
+    <asp:ContentPlaceHolder ID="mainContent" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <div id="wrapper">
         <footer>
-            <h2>About Us</h2>
             <hr />
-            <ul>
-                <li></li>
-            </ul>
+            <section class="footerSection">
+                <h3 class="footerHead">Get To Know Us</h3>
+                <ul>
+                    <li><a href="HomePage.aspx" class="footerLink">Home</a></li>
+                    <li><a href="AboutPage.aspx" class="footerLink">About Us</a></li>
+                    <li><a href="ContactPage.aspx" class="footerLink">Contact</a></li>
+                </ul>
+            </section>
+            <section class="footerSection">
+                <h3 class="footerHead">Categories</h3>
+                <ul>
+                    <li><a href="ATPage.aspx" class="footerLink">Audio Technica</a></li>
+                    <li><a href="#" class="footerLink">Bose</a></li>
+                    <li><a href="#" class="footerLink">Sennheiser</a></li>
+                    <li><a href="#" class="footerLink">Sony</a></li>
+                </ul>
+            </section>
         </footer>
     </div>
 </body>
